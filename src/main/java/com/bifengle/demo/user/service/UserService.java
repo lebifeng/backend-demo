@@ -1,6 +1,6 @@
 package com.bifengle.demo.user.service;
 
-import com.bifengle.demo.user.beans.UserInfo;
+import com.bifengle.demo.user.bean.UserInfo;
 
 import java.util.ArrayList;
 

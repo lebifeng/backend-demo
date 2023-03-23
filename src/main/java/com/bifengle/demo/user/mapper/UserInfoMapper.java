@@ -1,6 +1,6 @@
 package com.bifengle.demo.user.mapper;
 
-import com.bifengle.demo.user.beans.UserInfo;
+import com.bifengle.demo.user.bean.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.ArrayList;

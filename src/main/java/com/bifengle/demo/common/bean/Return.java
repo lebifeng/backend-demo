@@ -1,12 +1,20 @@
-package com.bifengle.demo.common.beans;
+package com.bifengle.demo.common.bean;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 public class Return<T> {
 
-    public Return() {}
+    private boolean success;
+
+    private T data;
+
+    private int errorCode;
+    
+    private String errorMsg;
+
+    public Return() {
+    }
 
     public Return(boolean success, T data) {
         this.success = success;
@@ -18,14 +26,6 @@ public class Return<T> {
         this.errorCode = errorCode;
         this.errorMsg = errorMsg;
     }
-
-    private boolean success;
-
-    private T data;
-
-    private int errorCode;
-
-    private String errorMsg;
 
     public static <T> Return<T> success(T data) {
         return new Return<T>(true, data);

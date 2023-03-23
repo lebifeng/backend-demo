@@ -1,6 +1,6 @@
 package com.bifengle.demo.user.service;
 
-import com.bifengle.demo.user.beans.UserInfo;
+import com.bifengle.demo.user.bean.UserInfo;
 import com.bifengle.demo.user.mapper.UserInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
